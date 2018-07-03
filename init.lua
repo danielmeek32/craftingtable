@@ -6,6 +6,11 @@ local open_crafting_table = function(player, pos)
 	inv:set_width("craft", 3)
 	inv:set_size("craft", 9)
 
+	-- rearrange items in the player's crafting inventory to match the crafting table size while keeping them in the same visual arrangement
+	inv:set_stack("craft", 5, inv:get_stack("craft", 4))
+	inv:set_stack("craft", 4, inv:get_stack("craft", 3))
+	inv:set_stack("craft", 3, ItemStack(nil))
+
 	-- show crafting table formspec (copied from default player formspec)
 	local formspec = "size[8,8.5]" ..
 		default.gui_bg ..
