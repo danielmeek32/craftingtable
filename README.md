@@ -1,5 +1,7 @@
 # Minetest crafting table mod
 
+**This repository is archived. Future development will take place at https://gitlab.com/danielmeek32/craftingtable.**
+
 Version 1.1.0
 
 Compatible with Minetest 0.4.16
